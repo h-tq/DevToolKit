@@ -2,7 +2,7 @@
 
 [TOC]
 
-# 📘 技术与科研常用 Emoji 对照表
+## 📘 技术与科研常用 Emoji 对照表
 
 | Emoji | 主题/含义       | 备注/适用场景                  |
 | ----- | --------------- | ------------------------------ |
@@ -39,7 +39,7 @@
 
 ------
 
-# 🛠️ 查看 NVIDIA 驱动版本
+## 🛠️ 查看 NVIDIA 驱动版本
 
 ```bash
 nvidia-smi
@@ -48,15 +48,15 @@ nvidia-smi
 
 ------
 
-# 🔧 Python pip 安装镜像源
+## 🔧 Python pip 安装镜像源
 
-###### 🌐 清华大学：https://pypi.tuna.tsinghua.edu.cn/simple
+🌐 清华大学：https://pypi.tuna.tsinghua.edu.cn/simple
 
-###### 🔬 中国科学技术大学：https://pypi.mirrors.ustc.edu.cn/simple
+🔬 中国科学技术大学：https://pypi.mirrors.ustc.edu.cn/simple
 
-###### ☁️ 阿里云：http://mirrors.aliyun.com/pypi/simple
+☁️ 阿里云：http://mirrors.aliyun.com/pypi/simple
 
-###### 📖 豆瓣：http://pypi.doubanio.com/simple
+📖 豆瓣：http://pypi.doubanio.com/simple
 
 ☁️ 腾讯云：https://mirrors.cloud.tencent.com/pypi/simple
 
@@ -66,7 +66,7 @@ nvidia-smi
 
 ------
 
-# 🛠️ Conda 镜像配置指南
+## 🛠️ Conda 镜像配置指南
 
 🔍 查看已有镜像源
 
@@ -83,7 +83,6 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/linux-64/
 ```
 
-
 📋 显示通道地址配置
 
 ```bash
@@ -99,7 +98,7 @@ conda config --remove-key channels                                              
 
 ------
 
-# 🔧 Anaconda 环境管理指南
+## 🔧 Anaconda 环境管理指南
 
 🔍 查看已配置的环境
 
@@ -115,7 +114,6 @@ conda create -n env-name python=3.8
 conda activate env-name
 conda deactivate
 ```
-
 
 🧪 测试 PyTorch 安装
 
@@ -134,7 +132,7 @@ quit()
 
 ------
 
-# 🐍 Python 与 Conda 包管理清理指南
+## 🐍 Python 与 Conda 包管理清理指南
 
 ✅ 检查已安装 Python 包的依赖关系是否存在问题
 
@@ -173,7 +171,7 @@ pip cache list          # 列出所有已缓存的安装包
 
 ------
 
-# DREAM
+## DREAM
 
 | 💻 Windows | 🐍 Python 3.12 | 🔥 PyTorch 2.4.1 | 🧠 CUDA 12.4 |
 | --------- | ------------- | --------------- | ----------- |
@@ -212,7 +210,7 @@ sudo apt install libxcb-xinerama0
 
 ------
 
-# Informer
+## Informer
 
 | 💻 Windows／🐧 Ubuntu | 🐍 Python 3.8 | 🔥 PyTorch 1.10.0 | 🧠 CUDA 11.3 |
 | ------------------- | ------------ | ---------------- | ----------- |
@@ -241,7 +239,7 @@ pip install scikit-learn -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 ------
 
-# t-PatchGNN
+## t-PatchGNN
 
 | 💻 Windows | 🐍 Python 3.12 | 🔥 PyTorch 2.4.1 | 🧠 CUDA 12.4 |
 | --------- | ------------- | --------------- | ----------- |
@@ -272,7 +270,7 @@ pip install psycopg2-binary -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 ------
 
-# AdaPTS
+## AdaPTS
 
 
 | 💻 Windows／🐧 Ubuntu | 🐍 Python 3.11 | 🔥 PyTorch 2.4.1 | 🧠 CUDA 12.4 |
