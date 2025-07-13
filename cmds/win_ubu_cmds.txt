@@ -1,0 +1,107 @@
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══════════//Windows
+════════════════════════════════════════════════════════════════════════════════════════════════════
+charmap     # 打开cmd（查找特殊字符）
+
+━━━━━━━━━━  # 粗实线
+▇▇▇▇▇   # 实心块
+══════════  # 双实线
+
+powercfg -h off     # 删除休眠文件
+powercfg -h on      # 重新启用休眠功能
+══════════════════════════════════════════════════════════════════════════════════════════
+
+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══════════//Ubuntu
+════════════════════════════════════════════════════════════════════════════════════════════════════
+sudo dmidecode|grep -P -A5 "Memory\s+Device"|grep Size|grep -v Range    # 查看内存的插槽数，已经使用多少插槽。每条内存多大，已使用内存多大
+
+sudo dmidecode|grep -P 'Maximum\s+Capacity'                             # 查看内存支持的最大内存容量
+
+sudo dmidecode|grep -A16 "Memory Device"                                # 查看内存的频率
+sudo dmidecode|grep -A16 "Memory Device"|grep 'Speed'
+
+══════════//终端粘贴回车
+sudo nano /etc/inputrc              # 设置换行等于回车（粘贴命令直接执行）
+set enable-bracketed-paste off
+
+══════════//安装deb软件
+sudo dpkg -i xxxx.deb
+
+══════════//对该路径下所有文件给所有权限
+sudo chmod -R 777 路径
+
+══════════//Anaconda
+sudo nano ~/.bashrc
+sudo gedit ~/.bashrc
+
+export PATH="/home/t/anaconda3/bin:$PATH"
+source ~/anaconda3/bin/activate
+
+source ~/.bashrc
+source activate
+which conda
+
+# 没用
+conda config --set auto_activate_base True
+conda config --set auto_activate_base False
+
+══════════//PyCharm
+cd /usr/share/applications/
+sudo nano pycharm-2024.2.desktop
+sudo rm -f pycharm-2024.2.desktop
+
+[Desktop Entry]
+Name=PyCharm
+Comment=Python IDE
+Exec=/home/t/Documents/pycharm-community-2024.2/bin/pycharm.sh
+Icon=/home/t/Documents/pycharm-community-2024.2/bin/pycharm.svg
+Terminal=false
+Type=Application
+Categories=Development;IDE;
+
+══════════//clash-for-linux
+sudo apt install libfuse2
+sudo apt remove libfuse2  # 删除安装包
+sudo apt purge libfuse2  # 删除相关的依赖
+sudo apt autoremove
+sudo apt autoclean  # 从本地缓存中清除包
+
+cd /usr/share/applications/
+sudo nano clash-for-linux.desktop
+sudo rm -f clash-for-linux.desktop
+
+[Desktop Entry]
+Name=clash-for-linux
+Exec=/home/t/Documents/clash-for-linux/clash-verge.appimage
+Icon=/home/t/Documents/clash-for-linux/logo_64.png
+Terminal=false
+Type=Application
+Categories=Development;IDE;
+
+cp /home/t/Documents/clash-for-linux/clash-for-linux.desktop /usr/share/applications
+cp clash-for-linux.desktop /home/t/Documents/clash-for-linux
+
+══════════//clash-verge
+sudo apt remove --purge clash-verge
+
+══════════//同步windows和ubuntu时间
+sudo apt install ntpdate  # 安装ntpdate
+sudo ntpdate time.windows.com  # 设置校正服务器
+sudo hwclock --localtime --systohc  # 设置硬件时间为本地时间
+
+══════════//启动休眠模式
+sudo apt install pm-utils
+sudo pm-hibernate
+
+══════════//ubuntu启动盘修复grub引导
+sudo add-apt-repository ppa:yannubuntu/boot-repair && sudo apt-get update
+sudo apt-get install -y boot-repair && boot-repair
+
+══════════//nvidia-smi 实时刷新 实时显示显存使用情况
+watch -n 1 -d nvidia-smi
+watch -n 0.1 -d nvidia-smi
+watch -n 0.1 nvidia-smi
+
