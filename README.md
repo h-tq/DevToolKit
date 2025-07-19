@@ -1,3 +1,7 @@
+
+
+[TOC]
+
 ## 📘 技术与科研常用 Emoji 对照表
 
 | Emoji | 主题/含义    | 备注/适用场景         |
@@ -130,6 +134,33 @@ quit()
 
 ## 🐍 Python 与 Conda 包管理清理指南
 
+###### 🔧 安装 Python 包
+
+```bash
+pip install package-name           # 安装最新版本的包
+pip install package-name==2.2.4    # 安装指定版本的包
+pip install "package-name>=2.0"    # 安装满足版本要求的包
+pip install -U package-name        # 升级已安装的包到最新版本
+pip install --upgrade package-name # 同上，升级包
+pip install -r requirements.txt    # 从文件安装多个依赖包
+```
+
+###### 📋 查看包信息
+
+```bash
+pip show package-name       # 查看已安装包的详细信息（版本、位置、依赖等）
+pip show -f package-name    # 显示包安装的所有文件列表
+pip list                    # 列出当前环境中所有已安装的包
+pip list --outdated         # 列出所有可升级的包
+```
+
+###### 🚫 卸载包
+
+```bash
+pip uninstall package-name         # 卸载指定包
+pip uninstall -r requirements.txt  # 批量卸载依赖
+```
+
 ###### ✅ 检查已安装 Python 包的依赖关系是否存在问题
 
 ```bash
@@ -139,7 +170,7 @@ pip check
 ###### 📦 通过 pip 查看 PyPI 上某个包的可用版本
 
 ```bash
-pip index versions torch
+pip index versions package-name
 ```
 
 ###### 🧹 删除 Conda 虚拟环境
