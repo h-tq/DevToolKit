@@ -2,40 +2,112 @@
 
 [TOC]
 
+## LaTeX 数学公式中一些基本常用表达的对照表
+
+| 公式表达                                                     | LaTeX 代码                                                   | 说明                      | LaTeX 字体命令含义                 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------- | ---------------------------------- |
+| $a^2 + b^2 = c^2$                                            | `a^2 + b^2 = c^2`                                            | 勾股定理                  | -                                  |
+| $\frac{a}{b}$                                                | `\frac{a}{b}`                                                | 分数                      | -                                  |
+| $\sqrt{x}$                                                   | `\sqrt{x}`                                                   | 平方根                    | -                                  |
+| $\sum_{i=1}^n i$                                             | `\sum_{i=1}^n i`                                             | 求和符号                  | -                                  |
+| $\int_a^b f(x) \, dx$                                        | `\int_a^b f(x) \, dx`                                        | 定积分                    | -                                  |
+| $\lim_{x \to \infty} f(x)$                                   | `\lim_{x \to \infty} f(x)`                                   | 极限                      | -                                  |
+| $\alpha, \beta, \gamma$                                      | `\alpha, \beta, \gamma`                                      | 希腊字母                  | -                                  |
+| $\infty$                                                     | `\infty`                                                     | 无穷大符号                | -                                  |
+| $a \times b$                                                 | `a \times b`                                                 | 乘号                      | -                                  |
+| $a \cdot b$                                                  | `a \cdot b`                                                  | 点乘符号                  | -                                  |
+| $\leq, \geq$                                                 | `\leq, \geq`                                                 | 小于等于，大于等于        | -                                  |
+| $\neq$                                                       | `\neq`                                                       | 不等于                    | -                                  |
+| $\vec{v}$                                                    | `\vec{v}`                                                    | 向量符号                  | -                                  |
+| $\mathbb{R}$                                                 | `\mathbb{R}`                                                 | 实数集                    | `bb` = Blackboard Bold（黑板粗体） |
+| $e^{i \pi} + 1 = 0$                                          | `e^{i \pi} + 1 = 0`                                          | 欧拉公式                  | -                                  |
+| $\text{sin}(x), \cos(x)$                                     | `\sin(x), \cos(x)`                                           | 三角函数                  | -                                  |
+| $\frac{d}{dx} f(x)$                                          | `\frac{d}{dx} f(x)`                                          | 导数                      | -                                  |
+| $\nabla \cdot \mathbf{F}$                                    | `\nabla \cdot \mathbf{F}`                                    | 散度                      | `mathbf` = Bold Roman Font（粗体） |
+| $\exists$                                                    | `\exists`                                                    | 存在量词                  | -                                  |
+| $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$ | `\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}` | 黑板粗体字母，数集        | `bb` = Blackboard Bold             |
+| $\mathbf{A}, \mathbf{b}$                                     | `\mathbf{A}, \mathbf{b}`                                     | 粗体字母                  | `bf`/`mathbf` = Bold Font          |
+| $\mathcal{F}, \mathcal{L}$                                   | `\mathcal{F}, \mathcal{L}`                                   | 花体字母（函数空间/算子） | `cal` = Calligraphic（书法体）     |
+| $\mathfrak{g}, \mathfrak{h}$                                 | `\mathfrak{g}, \mathfrak{h}`                                 | 哥特字体，常用于李代数    | `frak` = Fraktur（哥特体）         |
+| $\mathsf{A}, \mathsf{B}$                                     | `\mathsf{A}, \mathsf{B}`                                     | 无衬线字体                | `sf` = Sans Serif（无衬线）        |
+| $\mathtt{a}, \mathtt{b}$                                     | `\mathtt{a}, \mathtt{b}`                                     | 打字机字体                | `tt` = Typewriter Text（打字机体） |
+| $\mathrm{sin}, \mathrm{log}, \mathrm{exp}$                   | `\mathrm{sin}, \mathrm{log}, \mathrm{exp}`                   | 直立体函数名              | `rm` = Roman（直立体）             |
+| $\mathnormal{X}$                                             | `\mathnormal{X}`                                             | 默认数学斜体              | `normal` = 默认数学字体            |
+| $\boldsymbol{\alpha}$                                        | `\boldsymbol{\alpha}`                                        | 粗体希腊字母或符号        | `boldsymbol` = 粗体数学符号        |
+| $\mathring{A}$                                               | `\mathring{A}`                                               | 字母上小圆圈（环）        | `ring` = 圆环符号                  |
+| $\dot{x}, \ddot{x}$                                          | `\dot{x}, \ddot{x}`                                          | 点导数符号                | `dot`, `ddot` = 单点、双点         |
+| $\mathcal{F}$                                                | `\mathcal{F}`                                                | 函数空间常见写法          | `cal` = Calligraphic               |
+| $\mathcal{L}$                                                | `\mathcal{L}`                                                | 拉普拉斯算子常用          | `cal` = Calligraphic               |
+| $\mathcal{A}, \mathcal{B}, \mathcal{C}$                      | `\mathcal{A}, \mathcal{B}, \mathcal{C}`                      | 表示集合或结构            | `cal` = Calligraphic               |
+| $\mathrm{sin}(x)$                                            | `\mathrm{sin}(x)`                                            | 正确书写三角函数名        | `rm` = Roman                       |
+| $\mathrm{log}(x)$                                            | `\mathrm{log}(x)`                                            | 对数函数名                | `rm` = Roman                       |
+| $\mathrm{kg}, \mathrm{m}, \mathrm{s}$                        | `\mathrm{kg}, \mathrm{m}, \mathrm{s}`                        | 单位符号                  | `rm` = Roman                       |
+| $\mathrm{d}x$                                                | `\mathrm{d}x`                                                | 微分符号中的d             | `rm` = Roman                       |
+| $x > 0 \text{且} y < 0$                                      | `x > 0 \text{且} y < 0`                                      | 插入中文逻辑词“且”        | `text` = 普通文本                  |
+| $\text{if } x > 0$                                           | `\text{if } x > 0`                                           | 插入英文条件语句          | `text` = 普通文本                  |
+| $m = 10 \text{ kg}$                                          | `m = 10 \text{ kg}`                                          | 插入单位                  | `text` = 普通文本                  |
+| $f(x) = x^2 \quad \text{for } x \in \mathbb{R}$              | `f(x) = x^2 \quad \text{for } x \in \mathbb{R}`              | 插入解释性文字            | `text`, `bb`                       |
+| $\phi$                                                       | `\phi`                                                       | 开口 φ（默认）            | -                                  |
+| $\varphi$                                                    | `\varphi`                                                    | 闭口 φ（卷曲）            | `var` = Variant 变体符号           |
+
+$$
+\begin{aligned}
+& \text{令} \quad \mathbf{v} = (v_1, v_2, \ldots, v_n) \in \mathbb{R}^n, \quad
+\mathcal{F} = \left\{ f : \mathbb{R}^n \to \mathbb{R} \mid f \in C^\infty \right\}, \\
+& \text{则定义算子} \quad \mathcal{L} f(\mathbf{v}) = \mathrm{div} \big( \mathbf{A}(\mathbf{v}) \nabla f(\mathbf{v}) \big) + \sum_{i=1}^n b_i(\mathbf{v}) \frac{\partial f}{\partial v_i}(\mathbf{v}), \\
+& \text{其中} \quad \mathbf{A}(\mathbf{v}) = \left( a_{ij}(\mathbf{v}) \right)_{n \times n}, \quad
+a_{ij}(\mathbf{v}) = \frac{\partial^2}{\partial v_i \partial v_j} \mathrm{exp}\big( -\|\mathbf{v}\|^2 \big), \\
+& \text{且满足边界条件} \quad f(\mathbf{v}) = 0, \quad \forall \mathbf{v} \in \partial \Omega, \\
+& \text{其中} \quad \Omega \subset \mathbb{R}^n \quad \text{是有界开集}, \\
+& \text{并且} \quad \mathbf{b}(\mathbf{v}) = (b_1(\mathbf{v}), \ldots, b_n(\mathbf{v})) \in \mathbb{R}^n, \\
+& \text{满足} \quad \sum_{i=1}^n \frac{\partial b_i}{\partial v_i}(\mathbf{v}) = 0, \quad \mathrm{且} \quad \mathbf{b}(\mathbf{v}) \cdot \mathbf{v} \leq 0, \quad \forall \mathbf{v} \in \Omega. \\
+& \\
+& \text{进一步，有泛函} \quad J(f) = \int_\Omega \left( \frac{1}{2} \nabla f(\mathbf{v})^\top \mathbf{A}(\mathbf{v}) \nabla f(\mathbf{v}) + \sum_{i=1}^n b_i(\mathbf{v}) f(\mathbf{v}) \right) \, d\mathbf{v}, \\
+& \text{目标是求} \quad f^* = \arg\min_{f \in \mathcal{F}} J(f), \\
+& \text{且满足} \quad \int_\Omega f(\mathbf{v}) \, d\mathbf{v} = 1, \quad f(\mathbf{v}) \geq 0, \quad \forall \mathbf{v} \in \Omega. \\
+& \\
+& \text{这个问题的欧拉-拉格朗日方程为} \\
+& \quad \mathcal{L} f(\mathbf{v}) + \lambda \mathrm{e}^{-\|\mathbf{v}\|^2} = 0, \quad \lambda \in \mathbb{R}, \\
+& \quad \text{其中} \quad \lambda \quad \text{为拉格朗日乘子}. \\
+\end{aligned}
+$$
+
+------
+
 ## 📘 技术与科研常用 Emoji 对照表
 
-| Emoji | 主题/含义    | 备注/适用场景         |
-|-------|----------|-----------------|
-| 🔣    | 符号/编码    | 特殊字符、编码、字符集相关   |
-| 📌    | 固定/重点    | 重点标记、固定内容、待办事项  |
-| 🚫    | 禁止/不可用   | 禁止操作、禁用状态、不可访问  |
-| 🧪    | 实验       | 实验过程、实验室、科研测试   |
-| 🔬    | 显微镜      | 细节观察、科学实验、分析    |
-| 🧬    | DNA      | 生命科学、生物信息学、基因研究 |
-| 📊    | 数据分析     | 统计、数据可视化、图表     |
-| 📈    | 上升趋势     | 进展、性能提升、增长      |
-| 📉    | 下降趋势     | 退步、性能下降、减少      |
-| 💻    | 计算机/编程   | 代码开发、计算机工作      |
-| 🐍    | Python   | Python 编程语言     |
-| 🐧    | Linux    | Linux 操作系统      |
-| 🧠    | 人工智能/思考  | 机器学习、AI、智能算法    |
-| 🤖    | 机器人      | 自动化、机器人学、智能系统   |
-| 🔧    | 工具/调试    | 配置、修复、开发工具      |
-| 📁    | 文件夹/项目管理 | 数据文件、项目组织       |
-| 📦    | 软件包/部署   | 软件打包、版本发布       |
-| 📝    | 记录/笔记    | 实验笔记、写作、文档      |
-| 📚    | 书籍/文献    | 学习、论文、文献        |
-| 🔥    | 热门/性能好   | 流行技术、优秀成果       |
-| ⚠️    | 警告/风险    | 注意事项、安全提示       |
-| ✅     | 完成/正确    | 任务完成、结果验证       |
-| ❌     | 错误/失败    | 错误提醒、测试失败       |
-| ⏳     | 时间/进度    | 进度等待、时间消耗       |
-| 💡    | 灵感/创意    | 创新点、想法          |
-| 🧩    | 组件/模块    | 模块化设计、拼图、组合     |
-| 📡    | 通信/信号    | 数据传输、网络连接       |
-| 🌡️   | 测量/环境    | 温度测量、实验环境       |
-| 🖼️   | 图像/视觉    | 图像处理、视觉相关       |
-| 🔊    | 声音/音频    | 音频信号、声学         |
+| Emoji | 主题/含义       | 备注/适用场景                  |
+| ----- | --------------- | ------------------------------ |
+| 🔣     | 符号/编码       | 特殊字符、编码、字符集相关     |
+| 📌     | 固定/重点       | 重点标记、固定内容、待办事项   |
+| 🚫     | 禁止/不可用     | 禁止操作、禁用状态、不可访问   |
+| 🧪     | 实验            | 实验过程、实验室、科研测试     |
+| 🔬     | 显微镜          | 细节观察、科学实验、分析       |
+| 🧬     | DNA             | 生命科学、生物信息学、基因研究 |
+| 📊     | 数据分析        | 统计、数据可视化、图表         |
+| 📈     | 上升趋势        | 进展、性能提升、增长           |
+| 📉     | 下降趋势        | 退步、性能下降、减少           |
+| 💻     | 计算机/编程     | 代码开发、计算机工作           |
+| 🐍     | Python          | Python 编程语言                |
+| 🐧     | Linux           | Linux 操作系统                 |
+| 🧠     | 人工智能/思考   | 机器学习、AI、智能算法         |
+| 🤖     | 机器人          | 自动化、机器人学、智能系统     |
+| 🔧     | 工具/调试       | 配置、修复、开发工具           |
+| 📁     | 文件夹/项目管理 | 数据文件、项目组织             |
+| 📦     | 软件包/部署     | 软件打包、版本发布             |
+| 📝     | 记录/笔记       | 实验笔记、写作、文档           |
+| 📚     | 书籍/文献       | 学习、论文、文献               |
+| 🔥     | 热门/性能好     | 流行技术、优秀成果             |
+| ⚠️     | 警告/风险       | 注意事项、安全提示             |
+| ✅     | 完成/正确       | 任务完成、结果验证             |
+| ❌     | 错误/失败       | 错误提醒、测试失败             |
+| ⏳     | 时间/进度       | 进度等待、时间消耗             |
+| 💡     | 灵感/创意       | 创新点、想法                   |
+| 🧩     | 组件/模块       | 模块化设计、拼图、组合         |
+| 📡     | 通信/信号       | 数据传输、网络连接             |
+| 🌡️     | 测量/环境       | 温度测量、实验环境             |
+| 🖼️     | 图像/视觉       | 图像处理、视觉相关             |
+| 🔊     | 声音/音频       | 音频信号、声学                 |
 
 ------
 
